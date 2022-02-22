@@ -17,7 +17,6 @@ RSpec.configure do |config|
   config.before(:suite) do
     class TestAASMParentClass
       include AASM
-      attr_accessor :state
 
       aasm do
         state :sleeping, initial: true

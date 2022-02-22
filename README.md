@@ -25,7 +25,6 @@ for an example AASM:
 ```ruby
 class TestAASMParentClass
   include AASM
-  attr_accessor :state
 
   aasm do
     state :sleeping, initial: true
