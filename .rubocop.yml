@@ -1,0 +1,22 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  NewCops: enable
+
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - 'spec/**/*.rb'
